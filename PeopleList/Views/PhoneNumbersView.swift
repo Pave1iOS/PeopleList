@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PhoneNumbersView: View {
     let persons: [Person]
+    
     @State private var singleSelection: UUID?
     
     var body: some View {
@@ -16,14 +17,14 @@ struct PhoneNumbersView: View {
             List(selection: $singleSelection) {
                 ForEach(persons) { person in
                     Section {
-                        SectionListView(
-                            systemImageName: "phone.fill",
+                        SectionView(
+                            systemImageName: .phone,
                             text: person.phoneNumber
                         )
                         .padding(.leading, 2)
                 
-                        SectionListView(
-                            systemImageName: "envelope.fill",
+                        SectionView(
+                            systemImageName: .email,
                             text: person.email
                         )
                             
@@ -36,22 +37,6 @@ struct PhoneNumbersView: View {
             .listStyle(.plain)
             .navigationTitle("Contact List")
         }
-    }
-}
-
-struct SectionListView: View {
-    let systemImageName: String
-    let text: String
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            HStack(spacing: 20) {
-                Image(systemName: "\(systemImageName)")
-                    .foregroundStyle(Color.blue)
-                Text(text)
-                    .font(.system(size: 15))
-            }
-        }.padding(.top, 3)
     }
 }
 

@@ -16,6 +16,7 @@
 		46E691912BA34BA800113066 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691902BA34BA800113066 /* ContactsView.swift */; };
 		46E691932BA34C9500113066 /* PhoneNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691922BA34C9500113066 /* PhoneNumbersView.swift */; };
 		46E691952BA4A7BA00113066 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691942BA4A7BA00113066 /* PersonDetailView.swift */; };
+		46E691972BA4AAAC00113066 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691962BA4AAAC00113066 /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		46E691902BA34BA800113066 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		46E691922BA34C9500113066 /* PhoneNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumbersView.swift; sourceTree = "<group>"; };
 		46E691942BA4A7BA00113066 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		46E691962BA4AAAC00113066 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				46E6917C2BA33ED500113066 /* PeopleListApp.swift */,
-				46E6917E2BA33ED500113066 /* ContentView.swift */,
-				46E691922BA34C9500113066 /* PhoneNumbersView.swift */,
-				46E691942BA4A7BA00113066 /* PersonDetailView.swift */,
-				46E691902BA34BA800113066 /* ContactsView.swift */,
+				46E691982BA4B18B00113066 /* Views */,
 				46E6918C2BA33FCA00113066 /* Models */,
 				46E6918F2BA3426900113066 /* Services */,
 				46E691802BA33ED600113066 /* Assets.xcassets */,
@@ -96,6 +95,18 @@
 				46E6918D2BA3425F00113066 /* DataStore.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		46E691982BA4B18B00113066 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46E6917E2BA33ED500113066 /* ContentView.swift */,
+				46E691902BA34BA800113066 /* ContactsView.swift */,
+				46E691922BA34C9500113066 /* PhoneNumbersView.swift */,
+				46E691942BA4A7BA00113066 /* PersonDetailView.swift */,
+				46E691962BA4AAAC00113066 /* SectionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				46E691932BA34C9500113066 /* PhoneNumbersView.swift in Sources */,
 				46E6918E2BA3425F00113066 /* DataStore.swift in Sources */,
 				46E6917D2BA33ED500113066 /* PeopleListApp.swift in Sources */,
+				46E691972BA4AAAC00113066 /* SectionView.swift in Sources */,
 				46E691912BA34BA800113066 /* ContactsView.swift in Sources */,
 				46E691952BA4A7BA00113066 /* PersonDetailView.swift in Sources */,
 				46E6918B2BA33F2C00113066 /* Person.swift in Sources */,
