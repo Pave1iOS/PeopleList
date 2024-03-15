@@ -51,7 +51,7 @@ struct SectionListView: View {
                 Text(text)
                     .font(.system(size: 15))
             }
-        }
+        }.padding(.top, 3)
     }
 }
 
