@@ -18,10 +18,10 @@ struct ContentView: View {
                     Text("Contacts")
                 }
             
-            DetailedContactsView(persons: persons)
+            ContactsFullView(persons: persons)
                 .tabItem {
-                    Image(systemName: "info.circle.fill")
-                    Text("Details")
+                    Image(systemName: "person")
+                    Text("Contacts full")
                 }
         }
     }

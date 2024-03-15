@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailedContactsView: View {
+struct ContactsFullView: View {
     let persons: [Person]
     @State private var singleSelection: UUID?
     
@@ -57,5 +57,5 @@ struct SectionListView: View {
 }
 
 #Preview {
-    DetailedContactsView(persons: Person.getContact())
+    ContactsFullView(persons: Person.getContact())
 }
