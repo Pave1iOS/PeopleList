@@ -16,20 +16,17 @@ struct ContactsFullView: View {
             List(selection: $singleSelection) {
                 ForEach(persons) { person in
                     Section {
-                        VStack(alignment: .leading) {
-                                SectionListView(
-                                    systemImageName: "phone.fill",
-                                    text: person.phoneNumber
-                                )
-                                .padding(.leading, 2)
-                        }
-                        VStack(alignment: .leading) {
-                                SectionListView(
-                                    systemImageName: "envelope.fill",
-                                    text: person.email
-                                )
+                        SectionListView(
+                            systemImageName: "phone.fill",
+                            text: person.phoneNumber
+                        )
+                        .padding(.leading, 2)
+                
+                        SectionListView(
+                            systemImageName: "envelope.fill",
+                            text: person.email
+                        )
                             
-                        }
                     } header: {
                         Text(person.fullName)
                     }
@@ -47,11 +44,13 @@ struct SectionListView: View {
     let text: String
     
     var body: some View {
-        HStack(spacing: 20) {
-            Image(systemName: "\(systemImageName)")
-                .foregroundStyle(Color.blue)
-            Text(text)
-                .font(.system(size: 15))
+        VStack(alignment: .leading) {
+            HStack(spacing: 20) {
+                Image(systemName: "\(systemImageName)")
+                    .foregroundStyle(Color.blue)
+                Text(text)
+                    .font(.system(size: 15))
+            }
         }
     }
 }
