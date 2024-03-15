@@ -22,10 +22,10 @@ struct Person: Identifiable {
         var persons: [Person] = []
         let dataStore = DataStore.shared
         
-        let names = dataStore.names
-        let surnames = dataStore.surnames
-        let emails = dataStore.email
-        let phoneNumbers = dataStore.phoneNumbers
+        let names = dataStore.names.shuffled()
+        let surnames = dataStore.surnames.shuffled()
+        let emails = dataStore.email.shuffled()
+        let phoneNumbers = dataStore.phoneNumbers.shuffled()
         
         let iterationCount = min(
             names.count,
