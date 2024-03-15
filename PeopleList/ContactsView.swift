@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ContactsView: View {
+    let persons: [Person]
+    
     var body: some View {
-        Text("Hello, World!")
+        List(persons) { person in
+            Text(person.fullName)
+        }
     }
 }
 
 #Preview {
-    ContactsView()
+    ContactsView(persons: Person.getContact())
 }

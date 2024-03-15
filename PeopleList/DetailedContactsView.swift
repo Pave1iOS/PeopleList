@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct DetailedContactsView: View {
+    let person: [Person]
+    
     var body: some View {
         Text("Hello, World!")
     }
 }
 
 #Preview {
-    DetailedContactsView()
+    DetailedContactsView(person: Person.getContact())
 }
