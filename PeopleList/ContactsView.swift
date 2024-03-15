@@ -11,8 +11,12 @@ struct ContactsView: View {
     let persons: [Person]
     
     var body: some View {
-        List(persons) { person in
-            Text(person.fullName)
+        NavigationStack {
+            List(persons) { person in
+                Text(person.fullName)
+            }
+            .listStyle(.plain)
+            .navigationTitle("Contact List")
         }
     }
 }
